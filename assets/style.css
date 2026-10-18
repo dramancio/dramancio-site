@@ -148,8 +148,16 @@ h1, h2, h3, h4, h5 { font-family: var(--head); margin: 0; line-height: 1.2; lett
 select { background: var(--soft); color: var(--text); border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; font: 14.5px var(--body); }
 .pubs { list-style: none; padding: 0; margin: 20px 0 0; }
 .pub { display: grid; grid-template-columns: 1fr auto; gap: 3px 20px; padding: 12px 0; }
-.pub-title { font-weight: 500; font-size: 15px; color: #2b3442; }
-.pub-title:hover { color: var(--accent); }
+.pub-title { font: 500 15px/1.5 var(--body); color: #2b3442; background: none; border: 0; margin: 0; text-align: left; cursor: pointer; width: 100%; }
+.pub-title:hover, .pub-title[aria-expanded="true"] { color: var(--accent); }
+.pub-title::after { content: "+"; display: inline-block; margin-left: 8px; text-indent: 0; color: var(--muted); font-weight: 400; transition: transform .15s; }
+.pub-title[aria-expanded="true"]::after { content: "\2212"; color: var(--accent); }
+.pub-detail { grid-column: 1 / -1; margin: 8px 0 6px 46px; padding: 14px 18px; background: var(--soft); border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; max-width: 78ch; }
+.pub-summary { margin: 0 0 8px; font-size: 14.5px; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.pub-why { margin: 0 0 12px; font-size: 14px; color: var(--muted); text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.pub-why strong { color: var(--text); }
+.pub-detail .actions { margin: 0; }
+.pub-detail .btn { padding: 7px 14px; font-size: 13px; }
 /* Hanging indent: the number sits on the title's baseline, wrapped lines align with the title text. */
 .pub-title { padding-left: 46px; text-indent: -46px; }
 .pub-num { display: inline-block; width: 34px; margin-right: 12px; text-indent: 0; text-align: right; color: #9aa3b2; font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; }
@@ -229,6 +237,7 @@ address { font-style: normal; color: var(--muted); margin-top: 10px; }
   .portrait { width: 120px; height: 120px; border-radius: 20px; }
 }
 @media (max-width: 560px) {
+  .pub-detail { order: 4; margin-left: 0; padding: 12px 14px; }
   .wrap { padding: 0 16px; }
   .hero { padding-bottom: 80px; }
   .head-note { margin-left: 0; flex-basis: 100%; }
