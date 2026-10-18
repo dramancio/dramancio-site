@@ -24,6 +24,11 @@ SCHOLAR_ID = "WHdCNq0AAAAJ"
 BASE = "https://scholar.google.com"
 PROFILE_URL = f"{BASE}/citations?user={SCHOLAR_ID}&hl=en"
 SERPAPI_URL = "https://serpapi.com/search.json"
+OPENALEX_URL = "https://api.openalex.org/works"
+CROSSREF_URL = "https://api.crossref.org/works"
+API_HEADERS = {"User-Agent": "dramancio.com publication updater (+https://dramancio.com)"}
+ARXIV_ID = re.compile(r"arXiv:(\d{4}\.\d{4,5})", re.I)
+MIN_TITLE_SIM = 0.8
 PAGE_SIZE = 100
 MAX_PAGES = 10
 MAX_DROP = 0.20  # refuse updates that lose more than 20% of publications
@@ -215,6 +220,83 @@ def fetch_direct():
     return pubs, parse_metrics(first), parse_histogram(first), interests
 
 
+# --- Direct links to the papers --------------------------------------------
+# Scholar only links to its own citation pages. Each paper is matched to its
+# DOI or publisher page through OpenAlex, then Crossref; a match needs an almost
+# identical title and "Amancio" among the authors. Links found in earlier runs
+# are reused, so only new papers are looked up.
+
+def title_words(text):
+    text = re.sub(r"<[^>]+>", " ", text or "").lower()
+    return {w for w in re.findall(r"[^\W_]+", text) if len(w) > 2}
+
+
+def title_sim(a, b):
+    wa, wb = title_words(a), title_words(b)
+    return len(wa & wb) / len(wa | wb) if wa | wb else 0.0
+
+
+def lookup_openalex(session, title):
+    params = {"search": title, "per_page": 5, "select": "title,doi,primary_location,authorships"}
+    resp = session.get(OPENALEX_URL, params=params, headers=API_HEADERS, timeout=30)
+    resp.raise_for_status()
+    best, score = None, 0.0
+    for work in resp.json().get("results") or []:
+        authors = [((a.get("author") or {}).get("display_name") or "").lower() for a in work.get("authorships") or []]
+        if not any("amancio" in name for name in authors):
+            continue
+        sim = title_sim(title, work.get("title"))
+        if sim > score:
+            best, score = work, sim
+    if best and score >= MIN_TITLE_SIM:
+        return best.get("doi") or (best.get("primary_location") or {}).get("landing_page_url")
+    return None
+
+
+def lookup_crossref(session, title):
+    params = {"query.bibliographic": title, "query.author": "Amancio", "rows": 3, "select": "DOI,title,subtitle,author"}
+    resp = session.get(CROSSREF_URL, params=params, headers=API_HEADERS, timeout=30)
+    resp.raise_for_status()
+    for item in (resp.json().get("message") or {}).get("items") or []:
+        if not any((a.get("family") or "").lower() == "amancio" for a in item.get("author") or []):
+            continue
+        full_title = " ".join((item.get("title") or []) + (item.get("subtitle") or []))
+        if title_sim(title, full_title) >= MIN_TITLE_SIM:
+            return "https://doi.org/" + item["DOI"]
+    return None
+
+
+def find_paper_url(session, pub):
+    arxiv = ARXIV_ID.search(pub.get("venue") or "")
+    if arxiv:
+        return f"https://arxiv.org/abs/{arxiv.group(1)}"
+    for lookup in (lookup_openalex, lookup_crossref):
+        try:
+            url = lookup(session, pub["title"])
+        except (requests.RequestException, ValueError, KeyError, TypeError):
+            url = None
+        time.sleep(0.2)
+        if url:
+            return url
+    return None
+
+
+def citation_key(url):
+    m = re.search(r"citation_for_view=([^&]+)", url or "")
+    return m.group(1) if m else url
+
+
+def add_paper_links(pubs, previous):
+    known = {citation_key(p.get("url")): p["paper_url"]
+             for p in (previous or {}).get("publications") or [] if p.get("paper_url")}
+    session = requests.Session()
+    found = 0
+    for pub in pubs:
+        pub["paper_url"] = known.get(citation_key(pub["url"])) or find_paper_url(session, pub)
+        found += bool(pub["paper_url"])
+    print(f"Direct paper links: {found} of {len(pubs)}.")
+
+
 # --- Output -----------------------------------------------------------------
 
 def load_previous():
@@ -250,6 +332,8 @@ def main():
         old = len(previous["publications"])
         if len(unique) < old * (1 - MAX_DROP):
             raise Blocked(f"Publication count dropped from {old} to {len(unique)}")
+
+    add_paper_links(unique, previous)
 
     data = {
         "source": "Google Scholar",
