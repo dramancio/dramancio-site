@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5 { font-family: var(--head); margin: 0; line-height: 1.2; lett
 .highlight::after { content: ""; position: absolute; right: -80px; top: -80px; width: 260px; height: 260px; border-radius: 50%; background: var(--accent-soft); z-index: 0; }
 .highlight > * { position: relative; z-index: 1; }
 .highlight-tag { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
-.badge { background: var(--accent); color: #fff; font: 700 11px var(--head); letter-spacing: .1em; text-transform: uppercase; padding: 5px 11px; border-radius: 999px; }
+.badge { background: var(--accent-soft); color: var(--accent-ink); font: 700 11px var(--head); letter-spacing: .1em; text-transform: uppercase; padding: 5px 11px; border-radius: 999px; }
 .highlight h2 { font-size: clamp(19px, 2vw, 22px); font-weight: 700; color: #2b3442; }
 .highlight-body { margin-top: 14px; max-width: 74ch; }
 .highlight-body p { margin: 0 0 12px; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
@@ -212,7 +212,7 @@ address { font-style: normal; color: var(--muted); margin-top: 10px; }
 .links a:hover { color: var(--accent); }
 .links a::after { content: "↗"; margin-left: auto; color: var(--muted); }
 
-.footer { padding: 0 0 40px; color: var(--muted); font-size: 13px; }
+.footer { padding: 0 0 40px; color: var(--muted); font-size: 13px; text-align: center; }
 .footer p { margin: 0; }
 
 /* Responsive */
