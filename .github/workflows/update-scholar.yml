@@ -12,9 +12,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -22,6 +22,8 @@ jobs:
         run: pip install requests==2.32.3 beautifulsoup4==4.12.3
 
       - name: Fetch Scholar profile
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python scripts/update_scholar.py
 
       - name: Commit changes
