@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """Fetch the Google Scholar profile and write data/scholar.js.
 
-Run weekly by .github/workflows/update-scholar.yml. Google Scholar has no
-official API and sometimes blocks automated requests, so this script only
-overwrites the data file when the new data passes sanity checks. Otherwise
-it exits without changes and the site keeps the last good data.
+Run weekly by .github/workflows/update-scholar.yml. Google Scholar blocks most
+requests coming from cloud servers, so when the SERPAPI_KEY environment variable
+is set the profile is read through SerpAPI (https://serpapi.com); otherwise the
+Scholar page is fetched directly. The data file is only overwritten when the new
+data passes sanity checks; otherwise the site keeps the last good data.
 """
 
 import json
+import os
 import re
 import sys
 import time
@@ -21,6 +23,7 @@ from bs4 import BeautifulSoup
 SCHOLAR_ID = "WHdCNq0AAAAJ"
 BASE = "https://scholar.google.com"
 PROFILE_URL = f"{BASE}/citations?user={SCHOLAR_ID}&hl=en"
+SERPAPI_URL = "https://serpapi.com/search.json"
 PAGE_SIZE = 100
 MAX_PAGES = 10
 MAX_DROP = 0.20  # refuse updates that lose more than 20% of publications
@@ -41,7 +44,81 @@ class Blocked(Exception):
     pass
 
 
-def fetch(session, cstart):
+def clean(text):
+    return re.sub(r"\s+", " ", text or "").strip()
+
+
+# --- SerpAPI ---------------------------------------------------------------
+
+def serpapi_page(session, key, start):
+    params = {
+        "engine": "google_scholar_author",
+        "author_id": SCHOLAR_ID,
+        "hl": "en",
+        "num": PAGE_SIZE,
+        "start": start,
+        "api_key": key,
+    }
+    resp = session.get(SERPAPI_URL, params=params, timeout=60)
+    if resp.status_code != 200:
+        raise Blocked(f"SerpAPI HTTP {resp.status_code}")
+    data = resp.json()
+    if data.get("error"):
+        raise Blocked(f"SerpAPI error: {data['error']}")
+    return data
+
+
+def serpapi_article(a):
+    cited = a.get("cited_by") or {}
+    value = cited.get("value")
+    year = str(a.get("year") or "")
+    return {
+        "title": clean(a.get("title")),
+        "authors": clean(a.get("authors")),
+        "venue": clean(a.get("publication")),
+        "year": int(year) if year.isdigit() else None,
+        "citations": int(value) if isinstance(value, int) or str(value or "").isdigit() else 0,
+        "url": a.get("link") or PROFILE_URL,
+        "cites_url": cited.get("link") if value else None,
+    }
+
+
+def fetch_serpapi(key):
+    session = requests.Session()
+    first = serpapi_page(session, key, 0)
+    articles = first.get("articles") or []
+    for page in range(1, MAX_PAGES):
+        if len(articles) < page * PAGE_SIZE:
+            break
+        more = serpapi_page(session, key, page * PAGE_SIZE).get("articles") or []
+        if not more:
+            break
+        articles.extend(more)
+
+    table = (first.get("cited_by") or {}).get("table") or []
+    metrics, since = {}, None
+    for row in table:
+        for name, values in row.items():
+            recent_key = next((k for k in values if k.startswith("since_")), None)
+            if recent_key:
+                since = int(recent_key.split("_")[1])
+            metrics[name] = {"all": int(values.get("all", 0)), "recent": int(values.get(recent_key, 0)) if recent_key else 0}
+    if not all(k in metrics for k in ("citations", "h_index", "i10_index")):
+        raise Blocked("SerpAPI response has no citation metrics")
+    metrics["since_year"] = since
+
+    graph = (first.get("cited_by") or {}).get("graph") or []
+    counts = {int(g["year"]): int(g.get("citations", 0)) for g in graph if str(g.get("year", "")).isdigit()}
+    years = range(min(counts), max(counts) + 1) if counts else []
+    hist = [{"year": y, "count": counts.get(y, 0)} for y in years]
+
+    interests = [clean(i.get("title")) for i in (first.get("author") or {}).get("interests") or []]
+    return [serpapi_article(a) for a in articles], metrics, hist, interests
+
+
+# --- Direct Scholar page (fallback) -----------------------------------------
+
+def fetch_page(session, cstart):
     url = f"{PROFILE_URL}&cstart={cstart}&pagesize={PAGE_SIZE}"
     resp = session.get(url, headers=HEADERS, timeout=30)
     if resp.status_code != 200:
@@ -50,10 +127,6 @@ def fetch(session, cstart):
     if "gsc_a_t" not in text or re.search(r"captcha|unusual traffic", text, re.I):
         raise Blocked("Scholar returned a CAPTCHA or an unexpected page")
     return BeautifulSoup(text, "html.parser")
-
-
-def clean(text):
-    return re.sub(r"\s+", " ", text or "").strip()
 
 
 def parse_rows(soup):
@@ -123,6 +196,24 @@ def parse_histogram(soup):
     return [{"year": y, "count": counts.get(y, 0)} for y in sorted(labels)]
 
 
+def fetch_direct():
+    session = requests.Session()
+    first = fetch_page(session, 0)
+    pubs = parse_rows(first)
+    for page in range(1, MAX_PAGES):
+        if len(pubs) < page * PAGE_SIZE:
+            break
+        time.sleep(5)
+        more = parse_rows(fetch_page(session, page * PAGE_SIZE))
+        if not more:
+            break
+        pubs.extend(more)
+    interests = [clean(a.get_text()) for a in first.select("#gsc_prf_int a")]
+    return pubs, parse_metrics(first), parse_histogram(first), interests
+
+
+# --- Output -----------------------------------------------------------------
+
 def load_previous():
     if not OUT.exists():
         return None
@@ -138,17 +229,9 @@ def load_previous():
 
 
 def main():
-    session = requests.Session()
-    first = fetch(session, 0)
-    pubs = parse_rows(first)
-    for page in range(1, MAX_PAGES):
-        if len(pubs) < page * PAGE_SIZE:
-            break
-        time.sleep(5)
-        more = parse_rows(fetch(session, page * PAGE_SIZE))
-        if not more:
-            break
-        pubs.extend(more)
+    key = os.environ.get("SERPAPI_KEY", "").strip()
+    pubs, metrics, hist, interests = fetch_serpapi(key) if key else fetch_direct()
+    print(f"Source: {'SerpAPI' if key else 'Google Scholar page'}")
 
     seen, unique = set(), []
     for p in pubs:
@@ -170,18 +253,11 @@ def main():
         "scholar_id": SCHOLAR_ID,
         "profile_url": PROFILE_URL,
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "interests": [clean(a.get_text()) for a in first.select("#gsc_prf_int a")],
-        "metrics": parse_metrics(first),
-        "citations_per_year": parse_histogram(first),
+        "interests": interests or (previous or {}).get("interests", []),
+        "metrics": metrics,
+        "citations_per_year": hist,
         "publications": unique,
     }
-
-    # Skip the write when only the timestamp would change.
-    if previous:
-        compare = dict(previous, updated_at=data["updated_at"])
-        if compare == data:
-            print("No changes in Scholar data.")
-            return
 
     payload = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True)
     OUT.write_text(
@@ -189,15 +265,14 @@ def main():
         f"{PREFIX}{payload};\n",
         encoding="utf-8",
     )
-    m = data["metrics"]
-    print(f"Updated: {len(unique)} publications, {m['citations']['all']} citations, "
-          f"h-index {m['h_index']['all']}.")
+    print(f"Updated: {len(unique)} publications, {metrics['citations']['all']} citations, "
+          f"h-index {metrics['h_index']['all']}.")
 
 
 if __name__ == "__main__":
     try:
         main()
-    except (Blocked, requests.RequestException) as exc:
+    except (Blocked, requests.RequestException, ValueError, KeyError) as exc:
         # Keep the last good data; the workflow still succeeds.
         print(f"::warning::Scholar update skipped: {exc}")
         sys.exit(0)
