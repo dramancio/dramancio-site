@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Raphael Amancio · Universidade de São Paulo</title>
+<meta name="description" content="Diego Raphael Amancio, Associate Professor of Computer Science at ICMC, Universidade de São Paulo. Research in network science, natural language processing, science of science and machine learning.">
+<meta property="og:title" content="Diego Raphael Amancio">
+<meta property="og:description" content="Associate Professor of Computer Science · ICMC, Universidade de São Paulo">
+<meta property="og:image" content="https://dramancio.com/assets/diego.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232a56c6'/><text x='32' y='41' font-family='Arial,sans-serif' font-weight='700' font-size='24' fill='white' text-anchor='middle'>DA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">Diego R. Amancio</a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="#about">Research</a>
+        <a href="#research">Impact</a>
+        <a href="#publications">Publications</a>
+        <a href="#news">News</a>
+        <a href="#background">Background</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-inner">
+      <img class="portrait" src="assets/diego.jpg" alt="Portrait of Diego Raphael Amancio" width="176" height="176">
+      <div>
+        <p class="eyebrow-light">Associate Professor of Computer Science</p>
+        <h1>Diego Raphael Amancio</h1>
+        <p class="affil">Instituto de Ciências Matemáticas e de Computação (ICMC)<br>Universidade de São Paulo · São Carlos, Brazil</p>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<main class="wrap content">
+
+  <section class="card about" id="about">
+    <div class="card-head"><h2>About my research</h2></div>
+    <div class="about-text">
+      <p>My research sits at the intersection of network science, natural language processing and machine learning. I am interested in complex systems whose behaviour emerges from the relationships between their parts, such as texts, the scientific literature and information flows, and I model them as networks to reveal patterns that traditional statistics often misses.</p>
+      <p>Since my PhD, I have studied language through networks, using the structure of word co-occurrence and semantic networks to investigate authorship, style, meaning and text quality. More recently, I have combined these representations with word embeddings and large language models. In parallel, I work on the science of science: how citations shape scientific impact, why papers are cited, how impact can be predicted, and how research is assessed and funded. I also develop and compare machine learning methods for graphs and data analysis; our comparative studies of clustering and classification methods and our tutorial on principal component analysis are widely used references.</p>
+    </div>
+  </section>
+
+  <article class="card highlight" aria-labelledby="new-pub-title">
+    <div class="highlight-tag">
+      <span class="badge">New publication</span>
+      <span class="muted small"><em>Journal of Informetrics</em> · 2026</span>
+    </div>
+    <h2 id="new-pub-title">Not all citations are equal: teaching AI to read why scientists cite</h2>
+    <div class="highlight-body">
+      <p>Citations are the currency of science. They show how ideas spread, and they feed the indicators used to evaluate papers, researchers and institutions. But a citation can mean very different things: a paper may be cited as background, because its method was used, or to compare results. Counting every citation the same way hides that difference.</p>
+      <p>We built a compact AI model, based on generative adversarial networks (GANs), that reads the sentence around a citation and identifies its intent. It matches state-of-the-art accuracy with far fewer parameters, so it is cheaper to run at scale. Applying it to a large network of arXiv papers, we found that which papers look most central changes significantly depending on which kinds of citations are counted, especially for papers that bridge different fields.</p>
+      <p class="why"><strong>Why it matters.</strong> Rankings of papers and researchers often rely on raw citation counts. This work shows that those rankings depend on <em>why</em> papers are cited, and offers an efficient tool to take citation intent into account: a step toward fairer, more meaningful research evaluation.</p>
+    </div>
+    <div class="highlight-foot">
+      <div class="orig small muted">
+        <span class="orig-label">Original article</span>
+        <span>D. A. Bezerra, F. N. Silva, D. R. Amancio</span>
+        <span>“Leveraging GANs for citation intent classification and its impact on citation network analysis.”</span>
+        <span><em>Journal of Informetrics</em> 20(2), 101791 (2026).</span>
+      </div>
+      <div class="actions">
+        <a class="btn soft" href="https://www.sciencedirect.com/science/article/pii/S1751157726000246" target="_blank" rel="noopener">Read the paper</a>
+        <a class="btn" href="https://arxiv.org/abs/2505.21162" target="_blank" rel="noopener">
+          <svg class="arxiv-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 4l14 16M19 4l-5.6 6.4M10.6 13.6 5 20" fill="none" stroke="#b31b1b" stroke-width="2.6" stroke-linecap="round"/></svg>
+          arXiv</a>
+      </div>
+    </div>
+  </article>
+
+  <section class="card impact" id="research">
+    <div class="card-head">
+      <h2>Research impact</h2>
+      <p class="muted small head-note" id="updated">Data from Google Scholar.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-stats">
+        <table class="impact-table">
+          <thead><tr><th></th><th>All</th><th id="since-label">Since 2021</th></tr></thead>
+          <tbody>
+            <tr><th>Citations</th><td data-m="citations">5,551</td><td data-mr="citations">3,739</td></tr>
+            <tr><th>h-index</th><td data-m="h">41</td><td data-mr="h">26</td></tr>
+            <tr><th>i10-index</th><td data-m="i10">69</td><td data-mr="i10">63</td></tr>
+          </tbody>
+        </table>
+        <p class="pub-total"><span data-m="pubs">133</span> publications indexed</p>      </div>
+      <figure class="chart-card">
+        <figcaption>Citations per year</figcaption>
+        <div id="cites-chart" class="chart" role="img" aria-label="Bar chart of citations per year"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card" id="publications">
+    <div class="card-head"><h2>Publications</h2></div>
+
+    <h3 class="subhead">Selected</h3>
+    <ol class="featured">
+      <li>
+        <a href="https://doi.org/10.1145/3447755" target="_blank" rel="noopener">Principal component analysis: a natural approach to data exploration</a>
+        <span class="venue"><em>ACM Computing Surveys</em> 54(4), 1–34 (2021) · Highly cited paper</span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.physrep.2020.03.002" target="_blank" rel="noopener">Complex systems: features, similarity and connectivity</a>
+        <span class="venue"><em>Physics Reports</em> 861, 1–41 (2020)</span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1371/journal.pone.0210236" target="_blank" rel="noopener">Clustering algorithms: a comparative approach</a>
+        <span class="venue"><em>PLoS ONE</em> 14(1), e0210236 (2019) · Highly cited paper</span>
+      </li>
+    </ol>
+
+    <h3 class="subhead">All publications</h3>
+    <div class="pub-tools">
+      <label class="search">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="pub-search" type="search" placeholder="Search title, author or venue" aria-label="Search publications">
+      </label>
+      <select id="pub-year" aria-label="Filter by year"><option value="">All years</option></select>
+      <select id="pub-sort" aria-label="Sort publications">
+        <option value="cites" selected>Most cited</option>
+        <option value="year">Newest first</option>
+        <option value="rate">Most cited per year</option>
+      </select>
+    </div>
+    <div class="pub-info">
+      <p class="muted small" id="pub-count"></p>
+      <p class="muted small pub-legend"><span class="legend-pill">★</span> Top 10% of these papers by citations per year since publication</p>
+    </div>
+    <ol class="pubs" id="pub-list">
+      <li class="muted">Loading publications from Google Scholar…</li>
+    </ol>
+    <button class="btn more" id="pub-more" hidden>Show all publications</button>
+  </section>
+
+  <div class="grid-2" id="news">
+    <section class="card">
+      <div class="card-head"><h2>News &amp; recognition</h2></div>
+      <ul class="timeline">
+        <li><span class="t-year">2023</span>
+          <p>Ranked among the top Brazilian computer science researchers by <a href="https://research.com/scientists-rankings/computer-science/br" target="_blank" rel="noopener">Research.com</a> (authors with h-index above 30). <a href="http://www.saocarlos.usp.br/mais-de-230-professores-da-usp-estao-entre-os-melhores-cientistas-do-mundo/" target="_blank" rel="noopener">USP news (in Portuguese)</a>.</p></li>
+        <li><span class="t-year">2022</span>
+          <p>Received the <a href="https://prpi.usp.br/wp-content/uploads/sites/649/2022/10/Resultado-Premio-Excelencia-2022-1.pdf" target="_blank" rel="noopener">Young Leadership in Research Award</a> from the Universidade de São Paulo.</p></li>
+        <li><span class="t-year">2022</span>
+          <p>Ranked 22nd among Brazilian computer science researchers by Research.com.</p></li>
+        <li><span class="t-year">2022</span>
+          <p>“Clustering algorithms: a comparative approach” listed as a <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000455810200022" target="_blank" rel="noopener">highly cited paper</a> in Computer Science (top 1%, Web of Science).</p></li>
+        <li><span class="t-year">2020</span>
+          <p>Listed among the top 2% most influential researchers in Artificial Intelligence in a <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000918" target="_blank" rel="noopener">PLoS Biology study</a>, and among the 35 most influential researchers at USP across all fields in 2019, the youngest on that list (<a href="https://jornal.usp.br/universidade/pesquisadores-da-usp-estao-entre-os-mais-influentes-da-ciencia-mundial/" target="_blank" rel="noopener">Jornal da USP</a>).</p></li>
+        <li><span class="t-year">2020</span>
+          <p>H. F. Arruda received the <a href="https://www.in.gov.br/en/web/dou/-/edital-resultado-do-premio-capes-de-tese-edicao-2020-280587178" target="_blank" rel="noopener">CAPES Thesis Award</a> in Computer Science for a <a href="https://teses.usp.br/teses/disponiveis/55/55134/tde-26042019-105207/publico/HenriqueFerrazdeArruda_revisada.pdf" target="_blank" rel="noopener">thesis</a> supervised by L. F. Costa and D. R. Amancio.</p></li>
+      </ul>
+    </section>
+    <section class="card">
+      <div class="card-head"><h2>Editorial service</h2></div>
+      <ul class="plain-list">
+        <li><a href="https://www.journals.elsevier.com/expert-systems-with-applications/editorial-board" target="_blank" rel="noopener">Expert Systems with Applications</a><span>Academic Editor</span></li>
+        <li><a href="https://journals.plos.org/plosone/" target="_blank" rel="noopener">PLoS ONE</a><span>Academic Editor</span></li>
+        <li><a href="https://www.hindawi.com/journals/complexity/" target="_blank" rel="noopener">Complexity</a><span>Academic Editor</span></li>
+        <li><a href="https://peerj.com/computer-science/" target="_blank" rel="noopener">PeerJ Computer Science</a><span>Academic Editor</span></li>
+        <li><a href="https://www.frontiersin.org/journals/physics/sections/interdisciplinary-physics" target="_blank" rel="noopener">Frontiers in Physics</a><span>Associate Editor</span></li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="card" id="background">
+    <div class="card-head"><h2>Background</h2></div>
+    <ul class="timeline wide">
+      <li><span class="t-year">2019 – Now</span>
+        <h4>Associate Professor</h4>
+        <p>Department of Computer Science, ICMC, Universidade de São Paulo, São Carlos, Brazil.</p></li>
+      <li><span class="t-year">2017–2018</span>
+        <h4>Postdoctoral Researcher · Indiana University Bloomington</h4>
+        <p>School of Informatics, Computing and Engineering. Supervisor: <a href="http://cnets.indiana.edu/fil/" target="_blank" rel="noopener">Filippo Menczer</a>. “Modelling citation and information graphs: a complex network approach.” Funded by FAPESP.</p></li>
+      <li><span class="t-year">2013–2014</span>
+        <h4>Postdoctoral Researcher · Universidade de São Paulo</h4>
+        <p>São Carlos Institute of Physics (IFSC-USP). Supervisor: <a href="https://scholar.google.com/citations?user=YcAavdAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Luciano da Fontoura Costa</a>. “Modelling knowledge acquisition with complex networks.” Funded by FAPESP.</p></li>
+      <li><span class="t-year">2010–2013</span>
+        <h4>PhD in Computational Physics · Universidade de São Paulo</h4>
+        <p>IFSC-USP. Supervisor: Luciano da Fontoura Costa; co-supervisor: <a href="https://scholar.google.com.br/citations?user=Z7_I5OAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Osvaldo Novais Oliveira Jr.</a> Thesis: <a href="http://doi.org/10.11606/T.76.2013.tde-20012014-092439" target="_blank" rel="noopener">“Text classification using complex networks”</a>, funded by FAPESP. Awarded the <a href="https://www2.ifsc.usp.br/portal-ifsc/premio-tese-destaque-usp-ifsc-aparece-duas-vezes/" target="_blank" rel="noopener">USP Outstanding Thesis Award</a> (Prêmio Tese Destaque USP).</p></li>
+      <li><span class="t-year">2005–2009</span>
+        <h4>BSc in Computer Engineering · Universidade de São Paulo</h4>
+        <p>ICMC-USP and São Carlos School of Engineering (EESC-USP).</p></li>
+    </ul>
+  </section>
+
+  <section class="card" id="teaching">
+    <div class="card-head"><h2>Teaching</h2></div>
+    <p class="teaching-intro">Alongside course material, I study how didactic content can be delivered to optimize learning:
+      <a href="https://doi.org/10.1016/j.ins.2020.12.060" target="_blank" rel="noopener">knowledge acquisition performance</a> (<em>Information Sciences</em>, 2020),
+      <a href="https://doi.org/10.1016/j.ins.2017.08.091" target="_blank" rel="noopener">knowledge acquisition: a network approach</a> (<em>Information Sciences</em> 421, 2017) and
+      <a href="http://www.prg.usp.br/wp-content/uploads/anais_congresso_graduacao_usp2017_prefinal_03.pdf" target="_blank" rel="noopener">planning of didactic content</a> (USP Undergraduate Congress, 2017, in Portuguese).</p>
+
+    <div class="courses">
+      <details class="course">
+        <summary><span class="code">SCC5882</span> Complex Networks</summary>
+        <div class="course-body">
+          <h5>Slides</h5>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1ZvsfRoypEdspZL5ElKaRWWhZiAiNOH2D/view" target="_blank" rel="noopener">Introduction to networks</a></li>
+            <li><a href="https://drive.google.com/file/d/1_2TPA73TcaVgCpZUS-pWGeHLrJAAlKh3/view" target="_blank" rel="noopener">Complex network and centrality measurements</a></li>
+            <li><a href="https://drive.google.com/file/d/1_6ekZjJ8l-gJUJ3VmZvN04f0GG6COZS6/view" target="_blank" rel="noopener">Similarity measurements</a></li>
+            <li><a href="https://drive.google.com/file/d/1_85eYpo_7UkVIi9QzW9EOHqx5gPICb-N/view" target="_blank" rel="noopener">Community detection</a></li>
+          </ul>
+          <h5>Videos</h5>
+          <ul>
+            <li><a href="https://youtu.be/GaoTk-cyLGE?list=PLNGtlcB9K7UiQdaLKMqwJ2RkK1tZWD-zm&amp;t=113" target="_blank" rel="noopener">Introduction to networks</a></li>
+            <li><a href="https://youtu.be/paK2ZlqSjik?list=PLNGtlcB9K7UhAxG6jGtKFo4b9VAULxPHA&amp;t=72" target="_blank" rel="noopener">Complex network measurements</a></li>
+            <li><a href="https://youtu.be/XbL1Tnwpupc?list=PLNGtlcB9K7UjRbCgurZuTOEbm4OcVi1PJ&amp;t=351" target="_blank" rel="noopener">Centrality measurements</a></li>
+            <li><a href="https://youtu.be/s128E6-LZ94?list=PLNGtlcB9K7UgYF1TushxWih8K0UdfjAB9&amp;t=86" target="_blank" rel="noopener">Similarity measurements</a></li>
+            <li><a href="https://youtu.be/N8dk96g9F80?t=533" target="_blank" rel="noopener">Network visualization (invited talk)</a></li>
+          </ul>
+          <h5>Supporting material</h5>
+          <ul>
+            <li><a href="https://arxiv.org/abs/2010.06710" target="_blank" rel="noopener">Introduction to language networks: a practical approach</a></li>
+            <li><a href="https://drive.google.com/file/d/1Zalnkq4BrHapFvKqWGEBU8EnNd-FPzKw/view" target="_blank" rel="noopener">Visualizing the network science field</a></li>
+            <li><a href="https://drive.google.com/file/d/1ZoZKdMjr9HslI9CyMx2jhS_db-JPxlRG/view" target="_blank" rel="noopener">Applications of language network analysis</a></li>
+            <li>Network visualizations (Networks3D by F. N. Silva):
+              <a href="https://drive.google.com/file/d/1Z8byMP3opnYcw5MhvMSIsuwpyMNYKiIM/view" target="_blank" rel="noopener">Watts–Strogatz</a>,
+              <a href="https://drive.google.com/file/d/1ZDQk_VMAU0vVuzanEqlxhJMPywqA1Gy-/view" target="_blank" rel="noopener">collaboration</a>,
+              <a href="https://drive.google.com/file/d/1ZUDc4Kjbxqq9ffntBs1enk9DOSzSdmW5/view" target="_blank" rel="noopener">robustness</a>,
+              <a href="https://drive.google.com/file/d/1ZcGyvXEkL2x7H2fnpaAAxxzphEGZnme7/view" target="_blank" rel="noopener">Wikipedia</a>,
+              <a href="https://drive.google.com/file/d/1ZjYaR_3TtaX_j75SA9d5tVda-mrSHZka/view" target="_blank" rel="noopener">power grid</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="course">
+        <summary><span class="code">SCC0217</span> Compiler Design</summary>
+        <div class="course-body">
+          <h5>Slides</h5>
+          <ul><li><a href="https://drive.google.com/file/d/1ap84SvhaeombS_E1NKIc3KWPkKwj_7Bk/view" target="_blank" rel="noopener">Selected topics (PDF)</a></li></ul>
+          <h5>Video lectures</h5>
+          <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLY3SdOF0dFsdD7ZXEHkwrFPmZoRkrNvz6" target="_blank" rel="noopener">Syntactic analysis</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLY3SdOF0dFsdUoyJo6_rgqJDnvpo3xpEf" target="_blank" rel="noopener">Non-recursive syntactic analysis</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLY3SdOF0dFsd9pd-oN3XE_4OzBOFCgRwn" target="_blank" rel="noopener">Syntactic analysis: errors</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLY3SdOF0dFsdn_2_RO50HW8sKf_bVT7fM" target="_blank" rel="noopener">Bottom-up parsing (in Portuguese)</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLY3SdOF0dFsdx5Fw6x2VBLzzN6L7X_K9i" target="_blank" rel="noopener">SLR analysis</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLY3SdOF0dFsfqEBBi-3_MOCA_9URA3Mev" target="_blank" rel="noopener">Semantic analysis</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLY3SdOF0dFsekzOIjGMRgCdi2eySOObRA" target="_blank" rel="noopener">Code generation</a></li>
+          </ul>
+          <h5>Supporting material</h5>
+          <ul>
+            <li>Lexical analysis with LEX:
+              <a href="https://drive.google.com/file/d/1YtlFXxOzowwRo5fYrlHrT3FxevceOgWQ/view" target="_blank" rel="noopener">slides</a>,
+              <a href="https://drive.google.com/file/d/1YyabULfiUMH8oON4GYNpqATep5umeZWW/view" target="_blank" rel="noopener">sample code</a>,
+              <a href="https://www.youtube.com/playlist?list=PLNGtlcB9K7Ujzt7i_RIRFrunLne9F8JzV" target="_blank" rel="noopener">video</a></li>
+            <li>Syntactic analysis with YACC:
+              <a href="https://drive.google.com/file/d/1Z2j--OiMzCDWyLsK42aukfiIKTyhUSey/view" target="_blank" rel="noopener">slides</a>,
+              <a href="https://drive.google.com/file/d/1Z3494tQbn9LyBZWi9tmnw5d-SjVCUzoU/view" target="_blank" rel="noopener">sample code</a>,
+              <a href="https://www.youtube.com/watch?v=ish5JwnsVH4" target="_blank" rel="noopener">video</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="course">
+        <summary><span class="code">SCC5832</span> Introduction to Theory of Computation</summary>
+        <div class="course-body">
+          <h5>Slides</h5>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1ZrWf5qLc5pHXNIbByvRZ5LAx8nvphpdU/view" target="_blank" rel="noopener">Introduction to theory of computation</a></li>
+            <li><a href="https://drive.google.com/file/d/1ap8lQHeiVx-NFShz-RhMdEyfartk76sN/view" target="_blank" rel="noopener">Selected topics (PDF)</a></li>
+          </ul>
+          <h5>Video lectures</h5>
+          <ul>
+            <li><a href="https://youtu.be/GF7_gp_00XE?list=PLNGtlcB9K7UizXaxFrAl0YA89Gr74Wc6_&amp;t=87" target="_blank" rel="noopener">Types of proofs</a></li>
+            <li><a href="https://youtu.be/iMxlz6fJZ3g?list=PLNGtlcB9K7UjxBdgJZNwU-U5dmU-_gmcl&amp;t=138" target="_blank" rel="noopener">Basic concepts on languages</a></li>
+            <li><a href="https://youtu.be/PmJkXulcqig?list=PLNGtlcB9K7UgEs49zONiyJJHkOQRA7pId&amp;t=433" target="_blank" rel="noopener">Deterministic finite automata</a></li>
+            <li><a href="https://youtu.be/1nq8QIBoPG0?list=PLNGtlcB9K7UiDdzNmwGv0GqYrqaJVBhTl&amp;t=83" target="_blank" rel="noopener">Finite automata: examples</a></li>
+            <li><a href="https://youtu.be/oKBN_evUtDI?list=PLNGtlcB9K7Ugk_bE6aniOVU8f4gjxMlmK&amp;t=96" target="_blank" rel="noopener">Regular expressions</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="card contact-card" id="contact">
+    <div class="contact">
+      <div>
+        <div class="card-head"><h2>Contact</h2></div>
+        <p><a class="big-link" href="mailto:diego@icmc.usp.br">diego@icmc.usp.br</a></p>
+        <address>
+          Instituto de Ciências Matemáticas e de Computação (ICMC)<br>
+          Universidade de São Paulo, São Carlos Campus<br>
+          Av. Trabalhador São-carlense, 400<br>
+          São Carlos, SP 13566-590, Brazil
+        </address>
+      </div>
+      <ul class="links">
+        <li><a href="https://scholar.google.com/citations?user=WHdCNq0AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <span class="link-icon"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.8 9.6v3.6L12 20l6.8-3.8v-3.6L12 16.4l-6.8-3.8z"/></svg></span>
+          Google Scholar</a></li>
+        <li><a href="http://lattes.cnpq.br/8763967270082717" target="_blank" rel="noopener">
+          <span class="link-icon"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 3h7l5 5v13H7z M14 3v5h5 M10 12h6 M10 16h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+          Currículo Lattes</a></li>
+        <li><a href="https://www.linkedin.com/in/diego-amancio-0b5a866/" target="_blank" rel="noopener">
+          <span class="link-icon"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.84-2.05 3.79-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg></span>
+          LinkedIn</a></li>
+        <li><a href="https://x.com/diegoraph" target="_blank" rel="noopener">
+          <span class="link-icon"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.3-8.3L1 2h6.3l4.4 5.9L18.9 2zm-1.1 18.1h1.7L6.3 3.8H4.5l13.3 16.3z"/></svg></span>
+          @diegoraph</a></li>
+        <li><a href="https://instagram.com/diegoraph2736" target="_blank" rel="noopener">
+          <span class="link-icon"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg></span>
+          @diegoraph2736</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span id="year">2026</span> Diego Raphael Amancio · Publication data from Google Scholar, updated automatically every week.</p>
+</footer>
+
+<script src="data/scholar.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
