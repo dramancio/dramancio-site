@@ -72,10 +72,13 @@ def serpapi_article(a):
     cited = a.get("cited_by") or {}
     value = cited.get("value")
     year = str(a.get("year") or "")
+    venue = clean(a.get("publication"))
+    if year:
+        venue = re.sub(r",\s*" + re.escape(year) + r"$", "", venue)  # SerpAPI appends ", <year>"
     return {
         "title": clean(a.get("title")),
         "authors": clean(a.get("authors")),
-        "venue": clean(a.get("publication")),
+        "venue": venue,
         "year": int(year) if year.isdigit() else None,
         "citations": int(value) if isinstance(value, int) or str(value or "").isdigit() else 0,
         "url": a.get("link") or PROFILE_URL,
