@@ -253,20 +253,9 @@ address { font-style: normal; color: var(--muted); margin-top: 10px; }
   select { flex: 1; }
 }
 
-/* Institution logos (greyed out to match the page): ICMC in the hero, USP in the contact card */
+/* Institution logos in the contact card (greyed out to match the page) */
 .inst-logos img { display: block; width: auto; filter: brightness(0) opacity(.55); }
 .inst-logos a { display: block; transition: opacity .15s; }
 .inst-logos a:hover { opacity: .7; }
-.hero-inner { position: relative; }
-.logos-hero { position: absolute; right: 0; top: calc(50% + 28px); transform: translateY(-50%); }
-.logos-hero img { height: 92px; }
-.logos-contact { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
-.logos-contact img { height: 40px; }
-@media (max-width: 1000px) {
-  .logos-hero { position: static; transform: none; grid-column: 2; margin-top: -22px; }
-  .logos-hero img { height: 60px; }
-}
-@media (max-width: 760px) {
-  .logos-hero { grid-column: auto; }
-  .logos-hero img { height: 52px; }
-}
+.logos-contact { display: flex; align-items: center; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.logos-contact .usp { height: 44px; }
