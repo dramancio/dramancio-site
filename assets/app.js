@@ -222,7 +222,7 @@
         ? (p.cites_url ? '<a href="' + esc(p.cites_url) + '" target="_blank" rel="noopener"' + hint + ">" + fmt(p.citations) + "</a>" : "<span" + hint + ">" + fmt(p.citations) + "</span>") +
           (p.top ? '<small class="top-note">★ Top 10%</small>' : "<small>" + (p.citations === 1 ? "citation" : "citations") + "</small>")
         : "";
-      return '<li class="pub"><a class="pub-title" href="' + esc(p.url) + '" target="_blank" rel="noopener"><span class="pub-num">' + p.num + "</span>" + esc(p.title) + "</a>" +
+      return '<li class="pub"><a class="pub-title" href="' + esc(p.paper_url || p.url) + '" target="_blank" rel="noopener"><span class="pub-num">' + p.num + "</span>" + esc(p.title) + "</a>" +
         '<div class="pub-cites' + (p.top ? " is-top" : "") + '">' + cites + "</div>" +
         '<div class="pub-meta">' + meta + "</div></li>";
     }).join("") : '<li class="muted pub">No publications match your search.</li>';
