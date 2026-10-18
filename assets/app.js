@@ -7,6 +7,8 @@
   var SELF = /\b(D\.?\s?R\.?\s?Amancio|Diego R(?:aphael|\.)? Amancio|DR Amancio)\b/g;
   // Scholar entries hidden from the list: the PhD thesis and its duplicate (ids from the Scholar URLs).
   var EXCLUDE = ["BUYA1_V_uYcC", "M3NEmzRMIkIC"];
+  // Entries whose automatically found link is wrong; they open the Google Scholar page instead.
+  var SCHOLAR_ONLY = ["GtLg2Ama23sC"];
   // Proper nouns kept capitalized when titles are converted to sentence case.
   var PROPER = ["Brazil", "Brazilian", "Portuguese", "English", "Voynich", "Wikipedia", "Caatinga", "Leopardus"];
   var PROPER_PHRASES = ["Chamber of Deputies", "Brazilian Congress", "Chemistry of Materials"];
@@ -62,6 +64,7 @@
     for (var k in p) copy[k] = p[k];
     copy.title = sentenceCase(p.title);
     copy.rate = citesPerYear(p);
+    if (SCHOLAR_ONLY.some(function (id) { return p.url.indexOf(":" + id) >= 0; })) copy.paper_url = null;
     return copy;
   });
 
@@ -193,6 +196,38 @@
     var o = document.createElement("option"); o.value = yv; o.textContent = yv; yearSel.appendChild(o);
   });
 
+  // Expandable details: plain-language summary (data/summaries.js) and links to the paper.
+  var SUMMARIES = window.SUMMARIES || {};
+  var ARXIV_ICON = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 4l14 16M19 4l-5.6 6.4M10.6 13.6 5 20" fill="none" stroke="#b31b1b" stroke-width="2.6" stroke-linecap="round"/></svg>';
+
+  function detail(p) {
+    var s = SUMMARIES[citationId(p.url)] || {};
+    var body = s.s
+      ? '<p class="pub-summary">' + esc(s.s) + "</p>" + (s.w ? '<p class="pub-why"><strong>Why it matters.</strong> ' + esc(s.w) + "</p>" : "")
+      : "";
+    var links = p.paper_url
+      ? '<a class="btn soft" href="' + esc(p.paper_url) + '" target="_blank" rel="noopener">Read the paper</a>'
+      : '<a class="btn soft" href="' + esc(p.url) + '" target="_blank" rel="noopener">View on Google Scholar</a>';
+    if (s.arxiv && s.arxiv !== p.paper_url) {
+      links += '<a class="btn" href="' + esc(s.arxiv) + '" target="_blank" rel="noopener">' + ARXIV_ICON + "arXiv</a>";
+    }
+    return '<div class="pub-detail" hidden>' + body + '<div class="actions">' + links + "</div></div>";
+  }
+
+  function citationId(url) {
+    var m = /citation_for_view=[^:&]+:([^&]+)/.exec(url || "");
+    return m ? m[1] : "";
+  }
+
+  list.addEventListener("click", function (e) {
+    var title = e.target.closest(".pub-title");
+    if (!title) return;
+    var panel = title.parentNode.querySelector(".pub-detail");
+    var open = title.getAttribute("aria-expanded") === "true";
+    title.setAttribute("aria-expanded", String(!open));
+    panel.hidden = open;
+  });
+
   function render() {
     var q = search.value.trim().toLowerCase();
     var yv = yearSel.value;
@@ -222,9 +257,9 @@
         ? (p.cites_url ? '<a href="' + esc(p.cites_url) + '" target="_blank" rel="noopener"' + hint + ">" + fmt(p.citations) + "</a>" : "<span" + hint + ">" + fmt(p.citations) + "</span>") +
           (p.top ? '<small class="top-note">★ Top 10%</small>' : "<small>" + (p.citations === 1 ? "citation" : "citations") + "</small>")
         : "";
-      return '<li class="pub"><a class="pub-title" href="' + esc(p.paper_url || p.url) + '" target="_blank" rel="noopener"><span class="pub-num">' + p.num + "</span>" + esc(p.title) + "</a>" +
+      return '<li class="pub"><button type="button" class="pub-title" aria-expanded="false"><span class="pub-num">' + p.num + "</span>" + esc(p.title) + "</button>" +
         '<div class="pub-cites' + (p.top ? " is-top" : "") + '">' + cites + "</div>" +
-        '<div class="pub-meta">' + meta + "</div></li>";
+        '<div class="pub-meta">' + meta + "</div>" + detail(p) + "</li>";
     }).join("") : '<li class="muted pub">No publications match your search.</li>';
 
     countEl.textContent = filtered
