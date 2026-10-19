@@ -46,11 +46,11 @@ window.SCHOLAR = {
       "year": 2022
     },
     {
-      "count": 488,
+      "count": 489,
       "year": 2023
     },
     {
-      "count": 592,
+      "count": 591,
       "year": 2024
     },
     {
@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 648,
+      "count": 650,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5551,
-      "recent": 3739
+      "all": 5552,
+      "recent": 3741
     },
     "h_index": {
       "all": 41,
@@ -507,6 +507,16 @@ window.SCHOLAR = {
       "year": 2019
     },
     {
+      "authors": "JCMC Silva, RP Gouveia, KMC Zielinski, MCF Oliveira, DR Amancio, ...",
+      "citations": 35,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16865880095456224329",
+      "paper_url": "https://doi.org/10.1021/acsami.5c08837",
+      "title": "AI-assisted tools for scientific review writing: Opportunities and cautions",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:XoXfffV-tXoC",
+      "venue": "ACS Applied Materials & Interfaces 17 (34), 47795",
+      "year": 2025
+    },
+    {
       "authors": "DR Amancio, ON Oliveira Jr, LF Costa",
       "citations": 35,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9274441440122993825",
@@ -515,16 +525,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:Tyk-4Ss8FVUC",
       "venue": "Journal of Statistical Mechanics: Theory and Experiment 2012 (01), P01004",
       "year": 2012
-    },
-    {
-      "authors": "JCMC Silva, RP Gouveia, KMC Zielinski, MCF Oliveira, DR Amancio, ...",
-      "citations": 34,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16865880095456224329",
-      "paper_url": "https://doi.org/10.1021/acsami.5c08837",
-      "title": "AI-assisted tools for scientific review writing: Opportunities and cautions",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:XoXfffV-tXoC",
-      "venue": "ACS Applied Materials & Interfaces 17 (34), 47795",
-      "year": 2025
     },
     {
       "authors": "DR Amancio",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-18T09:59:54Z"
+  "updated_at": "2026-10-19T09:40:35Z"
 };
