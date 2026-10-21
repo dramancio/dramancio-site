@@ -42,7 +42,7 @@ window.SCHOLAR = {
       "year": 2021
     },
     {
-      "count": 607,
+      "count": 608,
       "year": 2022
     },
     {
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5552,
-      "recent": 3741
+      "all": 5553,
+      "recent": 3742
     },
     "h_index": {
       "all": 41,
@@ -108,7 +108,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, CH Comin, D Casanova, G Travieso, OM Bruno, ...",
-      "citations": 317,
+      "citations": 318,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5251232088675018309,9647129443986067881,7834447352100958408,10456774680092516225",
       "paper_url": "https://doi.org/10.1371/journal.pone.0094137",
       "title": "A systematic comparison of supervised classifiers",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-20T12:48:09Z"
+  "updated_at": "2026-10-21T13:00:38Z"
 };
