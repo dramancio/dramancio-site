@@ -54,11 +54,11 @@ window.SCHOLAR = {
       "year": 2024
     },
     {
-      "count": 837,
+      "count": 838,
       "year": 2025
     },
     {
-      "count": 650,
+      "count": 653,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5553,
-      "recent": 3742
+      "all": 5558,
+      "recent": 3747
     },
     "h_index": {
       "all": 41,
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 977,
+      "citations": 978,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 931,
+      "citations": 934,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -208,7 +208,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "CH Comin, T Peron, FN Silva, DR Amancio, FA Rodrigues, LF Costa",
-      "citations": 81,
+      "citations": 80,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3900009399712267932",
       "paper_url": "https://doi.org/10.1016/j.physrep.2020.03.002",
       "title": "Complex systems: Features, similarity and connectivity",
@@ -607,6 +607,16 @@ window.SCHOLAR = {
       "year": 2014
     },
     {
+      "authors": "A Vital Jr, FN Silva, ON Oliveira Jr, DR Amancio",
+      "citations": 21,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13511594028787993997",
+      "paper_url": "https://doi.org/10.1016/j.physa.2025.130789",
+      "title": "Predicting citation impact of research papers using GPT and other text embeddings",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:kz9GbA2Ns4gC",
+      "venue": "Physica A: Statistical Mechanics and its Applications 674, 130789",
+      "year": 2025
+    },
+    {
       "authors": "A Vital, DR Amancio",
       "citations": 20,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10111196521349750046,9105498862381413602",
@@ -615,16 +625,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:nrtMV_XWKgEC",
       "venue": "Scientometrics 127 (10), 6011-6028",
       "year": 2022
-    },
-    {
-      "authors": "A Vital Jr, FN Silva, ON Oliveira Jr, DR Amancio",
-      "citations": 19,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13511594028787993997",
-      "paper_url": "https://doi.org/10.1016/j.physa.2025.130789",
-      "title": "Predicting citation impact of research papers using GPT and other text embeddings",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:kz9GbA2Ns4gC",
-      "venue": "Physica A: Statistical Mechanics and its Applications 674, 130789",
-      "year": 2025
     },
     {
       "authors": "EA Correa Jr, VQ Marinho, DR Amancio",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-21T13:00:38Z"
+  "updated_at": "2026-10-22T13:02:01Z"
 };
