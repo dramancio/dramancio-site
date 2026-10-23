@@ -2,7 +2,7 @@ name: Update Google Scholar data
 
 on:
   schedule:
-    - cron: "23 7 * * *" # every day, 07:23 UTC (off the hour: GitHub drops many top-of-hour runs)
+    - cron: "31 4 * * *" # every day, 04:31 UTC = 01:31 in Brasília (off the hour: GitHub drops many top-of-hour runs)
   workflow_dispatch:
 
 permissions:
