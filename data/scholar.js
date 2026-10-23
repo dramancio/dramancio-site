@@ -38,27 +38,27 @@ window.SCHOLAR = {
       "year": 2020
     },
     {
-      "count": 562,
+      "count": 563,
       "year": 2021
     },
     {
-      "count": 608,
+      "count": 609,
       "year": 2022
     },
     {
-      "count": 489,
+      "count": 488,
       "year": 2023
     },
     {
-      "count": 591,
+      "count": 592,
       "year": 2024
     },
     {
-      "count": 838,
+      "count": 837,
       "year": 2025
     },
     {
-      "count": 653,
+      "count": 656,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5558,
-      "recent": 3747
+      "all": 5562,
+      "recent": 3751
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 934,
+      "citations": 935,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -108,7 +108,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, CH Comin, D Casanova, G Travieso, OM Bruno, ...",
-      "citations": 318,
+      "citations": 319,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5251232088675018309,9647129443986067881,7834447352100958408,10456774680092516225",
       "paper_url": "https://doi.org/10.1371/journal.pone.0094137",
       "title": "A systematic comparison of supervised classifiers",
@@ -208,7 +208,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "CH Comin, T Peron, FN Silva, DR Amancio, FA Rodrigues, LF Costa",
-      "citations": 80,
+      "citations": 81,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3900009399712267932",
       "paper_url": "https://doi.org/10.1016/j.physrep.2020.03.002",
       "title": "Complex systems: Features, similarity and connectivity",
@@ -228,7 +228,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, MGV Nunes, ON Oliveira Jr, L da F. Costa",
-      "citations": 78,
+      "citations": 79,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7517068302346637729,5708559431709535607",
       "paper_url": "https://doi.org/10.1007/s11192-012-0630-z",
       "title": "Using complex networks concepts to assess approaches for citations in scientific papers",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-22T13:02:01Z"
+  "updated_at": "2026-10-23T12:41:24Z"
 };
