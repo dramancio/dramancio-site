@@ -54,11 +54,11 @@ window.SCHOLAR = {
       "year": 2024
     },
     {
-      "count": 837,
+      "count": 838,
       "year": 2025
     },
     {
-      "count": 656,
+      "count": 659,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5562,
-      "recent": 3751
+      "all": 5567,
+      "recent": 3755
     },
     "h_index": {
       "all": 41,
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 978,
+      "citations": 979,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 935,
+      "citations": 938,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -407,6 +407,16 @@ window.SCHOLAR = {
       "year": 2012
     },
     {
+      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
+      "citations": 49,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
+      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
+      "title": "Machine learning and economic forecasting: The role of international trade networks",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
+      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
+      "year": 2024
+    },
+    {
       "authors": "VQ Marinho, G Hirst, DR Amancio",
       "citations": 49,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10443755862042488733,7224346328526869345",
@@ -415,16 +425,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:3s1wT3WcHBgC",
       "venue": "2016 5th Brazilian conference on intelligent systems (BRACIS), 355-360",
       "year": 2016
-    },
-    {
-      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
-      "citations": 48,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
-      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
-      "title": "Machine learning and economic forecasting: The role of international trade networks",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
-      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
-      "year": 2024
     },
     {
       "authors": "J Machicao, EA Corrêa Jr, GHB Miranda, DR Amancio, OM Bruno",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-24T09:00:19Z"
+  "updated_at": "2026-10-25T09:17:18Z"
 };
