@@ -38,7 +38,7 @@ window.SCHOLAR = {
       "year": 2020
     },
     {
-      "count": 563,
+      "count": 562,
       "year": 2021
     },
     {
@@ -46,19 +46,19 @@ window.SCHOLAR = {
       "year": 2022
     },
     {
-      "count": 488,
+      "count": 489,
       "year": 2023
     },
     {
-      "count": 592,
+      "count": 593,
       "year": 2024
     },
     {
-      "count": 838,
+      "count": 839,
       "year": 2025
     },
     {
-      "count": 661,
+      "count": 663,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5568,
-      "recent": 3757
+      "all": 5573,
+      "recent": 3761
     },
     "h_index": {
       "all": 41,
@@ -80,7 +80,7 @@ window.SCHOLAR = {
     },
     "i10_index": {
       "all": 69,
-      "recent": 63
+      "recent": 64
     },
     "since_year": 2021
   },
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 979,
+      "citations": 980,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 939,
+      "citations": 941,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -358,7 +358,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "C Akimushkin, DR Amancio, ON Oliveira Jr",
-      "citations": 53,
+      "citations": 54,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=360301669281111994",
       "paper_url": "https://doi.org/10.1016/j.physa.2017.12.054",
       "title": "On the role of words in the network structure of texts: Application to authorship attribution",
@@ -627,6 +627,16 @@ window.SCHOLAR = {
       "year": 2022
     },
     {
+      "authors": "DR Amancio, ON Oliveira Jr, LF Costa",
+      "citations": 20,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13616345463527091456,1508453683605537169,5097161239052477476",
+      "paper_url": "https://doi.org/10.1088/1742-5468/2015/03/p03003",
+      "title": "Robustness of community structure to node removal",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:RYcK_YlVTxYC",
+      "venue": "Journal of Statistical Mechanics: Theory and Experiment 2015 (3), P03003",
+      "year": 2015
+    },
+    {
       "authors": "EA Correa Jr, VQ Marinho, DR Amancio",
       "citations": 19,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5353765775142003710,3789459814264611706",
@@ -635,16 +645,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:bnK-pcrLprsC",
       "venue": "Physica A: Statistical Mechanics and its Applications 557, 124895",
       "year": 2020
-    },
-    {
-      "authors": "DR Amancio, ON Oliveira Jr, LF Costa",
-      "citations": 19,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13616345463527091456,1508453683605537169,5097161239052477476",
-      "paper_url": "https://doi.org/10.1088/1742-5468/2015/03/p03003",
-      "title": "Robustness of community structure to node removal",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:RYcK_YlVTxYC",
-      "venue": "Journal of Statistical Mechanics: Theory and Experiment 2015 (3), P03003",
-      "year": 2015
     },
     {
       "authors": "TC Silva, DR Amancio, BM Tabak",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-27T09:58:42Z"
+  "updated_at": "2026-10-28T10:44:16Z"
 };
