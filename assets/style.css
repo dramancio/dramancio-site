@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5 { font-family: var(--head); margin: 0; line-height: 1.2; lett
 .impact-table td[data-m] { font-weight: 600; }
 .pub-total { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
 
-.chart-card { margin: 0; min-width: 0; }
+.chart-card { margin: 0; min-width: 0; width: 100%; max-width: 520px; justify-self: end; } /* fixed size like Scholar; only shrinks when the screen is narrower */
 .chart-card figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
 .chart-title { font: 500 13px var(--body); color: var(--muted); }
 .chart-legend { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--muted); }
@@ -228,6 +228,7 @@ address { font-style: normal; color: var(--muted); margin-top: 10px; }
   .grid-2, .contact { grid-template-columns: 1fr; }
   .featured { grid-template-columns: 1fr; }
   .impact-grid { grid-template-columns: 1fr; gap: 24px; }
+  .chart-card { justify-self: start; }
 }
 @media (max-width: 760px) {
   .menu-btn { display: block; }
