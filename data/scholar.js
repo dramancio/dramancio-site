@@ -38,11 +38,11 @@ window.SCHOLAR = {
       "year": 2020
     },
     {
-      "count": 562,
+      "count": 561,
       "year": 2021
     },
     {
-      "count": 609,
+      "count": 608,
       "year": 2022
     },
     {
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5573,
-      "recent": 3761
+      "all": 5571,
+      "recent": 3759
     },
     "h_index": {
       "all": 41,
@@ -228,7 +228,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, MGV Nunes, ON Oliveira Jr, L da F. Costa",
-      "citations": 79,
+      "citations": 78,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7517068302346637729,5708559431709535607",
       "paper_url": "https://doi.org/10.1007/s11192-012-0630-z",
       "title": "Using complex networks concepts to assess approaches for citations in scientific papers",
@@ -318,7 +318,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, MGV Nunes, ON Oliveira Jr, TAS Pardo, L Antiqueira, ...",
-      "citations": 58,
+      "citations": 57,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15658359651924795589",
       "paper_url": "https://doi.org/10.1016/j.physa.2010.08.052",
       "title": "Using metrics from complex networks to evaluate machine translation",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-28T10:44:16Z"
+  "updated_at": "2026-10-29T11:01:13Z"
 };
