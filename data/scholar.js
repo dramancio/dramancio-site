@@ -38,11 +38,11 @@ window.SCHOLAR = {
       "year": 2020
     },
     {
-      "count": 561,
+      "count": 562,
       "year": 2021
     },
     {
-      "count": 608,
+      "count": 607,
       "year": 2022
     },
     {
@@ -54,11 +54,11 @@ window.SCHOLAR = {
       "year": 2024
     },
     {
-      "count": 839,
+      "count": 838,
       "year": 2025
     },
     {
-      "count": 663,
+      "count": 665,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5571,
-      "recent": 3759
+      "all": 5572,
+      "recent": 3760
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 941,
+      "citations": 942,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-30T10:58:28Z"
+  "updated_at": "2026-10-31T10:31:19Z"
 };
