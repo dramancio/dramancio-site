@@ -54,11 +54,11 @@ window.SCHOLAR = {
       "year": 2024
     },
     {
-      "count": 838,
+      "count": 835,
       "year": 2025
     },
     {
-      "count": 665,
+      "count": 671,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5572,
-      "recent": 3760
+      "all": 5577,
+      "recent": 3763
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 942,
+      "citations": 947,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -158,7 +158,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, EG Altmann, D Rybski, ON Oliveira Jr, LF Costa",
-      "citations": 99,
+      "citations": 100,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8690567468559703950",
       "paper_url": "https://doi.org/10.1371/journal.pone.0067310",
       "title": "Probing the statistical properties of unknown texts: application to the Voynich manuscript",
@@ -297,16 +297,6 @@ window.SCHOLAR = {
       "year": 2011
     },
     {
-      "authors": "LVC Quispe, JAV Tohalino, DR Amancio",
-      "citations": 62,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10589696937129838867",
-      "paper_url": "https://doi.org/10.1016/j.physa.2020.125344",
-      "title": "Using virtual edges to improve the discriminability of co-occurrence text networks",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:_B80troHkn4C",
-      "venue": "Physica A: Statistical Mechanics and its Applications 562, 125344",
-      "year": 2021
-    },
-    {
       "authors": "DR Amancio",
       "citations": 62,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10204848905931018149",
@@ -315,6 +305,16 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:RGFaLdJalmkC",
       "venue": "Journal of Statistical Mechanics: Theory and Experiment 2015 (3), P03005",
       "year": 2015
+    },
+    {
+      "authors": "LVC Quispe, JAV Tohalino, DR Amancio",
+      "citations": 61,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10589696937129838867",
+      "paper_url": "https://doi.org/10.1016/j.physa.2020.125344",
+      "title": "Using virtual edges to improve the discriminability of co-occurrence text networks",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:_B80troHkn4C",
+      "venue": "Physica A: Statistical Mechanics and its Applications 562, 125344",
+      "year": 2021
     },
     {
       "authors": "DR Amancio, MGV Nunes, ON Oliveira Jr, TAS Pardo, L Antiqueira, ...",
@@ -387,6 +387,16 @@ window.SCHOLAR = {
       "year": 2012
     },
     {
+      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
+      "citations": 50,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
+      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
+      "title": "Machine learning and economic forecasting: The role of international trade networks",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
+      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
+      "year": 2024
+    },
+    {
       "authors": "H Ferraz de Arruda, F Nascimento Silva, V Queiroz Marinho, ...",
       "citations": 50,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3142903707997534265,14906114549293636348",
@@ -405,16 +415,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:zYLM7Y9cAGgC",
       "venue": "EPL (Europhysics Letters) 98 (5), 58001",
       "year": 2012
-    },
-    {
-      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
-      "citations": 49,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
-      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
-      "title": "Machine learning and economic forecasting: The role of international trade networks",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
-      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
-      "year": 2024
     },
     {
       "authors": "VQ Marinho, G Hirst, DR Amancio",
@@ -528,7 +528,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio",
-      "citations": 31,
+      "citations": 30,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4543714659606783472",
       "paper_url": "https://doi.org/10.1209/0295-5075/114/58005",
       "title": "Network analysis of named entity co-occurrences in written texts",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-10-31T10:31:19Z"
+  "updated_at": "2026-11-01T11:26:05Z"
 };
