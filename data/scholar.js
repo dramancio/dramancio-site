@@ -18,7 +18,7 @@ window.SCHOLAR = {
       "year": 2015
     },
     {
-      "count": 137,
+      "count": 136,
       "year": 2016
     },
     {
@@ -38,11 +38,11 @@ window.SCHOLAR = {
       "year": 2020
     },
     {
-      "count": 563,
+      "count": 562,
       "year": 2021
     },
     {
-      "count": 607,
+      "count": 606,
       "year": 2022
     },
     {
@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 673,
+      "count": 679,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5579,
-      "recent": 3766
+      "all": 5583,
+      "recent": 3770
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 949,
+      "citations": 953,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -108,7 +108,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, CH Comin, D Casanova, G Travieso, OM Bruno, ...",
-      "citations": 319,
+      "citations": 318,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5251232088675018309,9647129443986067881,7834447352100958408,10456774680092516225",
       "paper_url": "https://doi.org/10.1371/journal.pone.0094137",
       "title": "A systematic comparison of supervised classifiers",
@@ -208,7 +208,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "CH Comin, T Peron, FN Silva, DR Amancio, FA Rodrigues, LF Costa",
-      "citations": 81,
+      "citations": 82,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3900009399712267932",
       "paper_url": "https://doi.org/10.1016/j.physrep.2020.03.002",
       "title": "Complex systems: Features, similarity and connectivity",
@@ -228,7 +228,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, MGV Nunes, ON Oliveira Jr, L da F. Costa",
-      "citations": 78,
+      "citations": 77,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7517068302346637729,5708559431709535607",
       "paper_url": "https://doi.org/10.1007/s11192-012-0630-z",
       "title": "Using complex networks concepts to assess approaches for citations in scientific papers",
@@ -508,7 +508,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "JCMC Silva, RP Gouveia, KMC Zielinski, MCF Oliveira, DR Amancio, ...",
-      "citations": 35,
+      "citations": 36,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16865880095456224329",
       "paper_url": "https://doi.org/10.1021/acsami.5c08837",
       "title": "AI-assisted tools for scientific review writing: Opportunities and cautions",
@@ -667,6 +667,16 @@ window.SCHOLAR = {
       "year": 2021
     },
     {
+      "authors": "FN Silva, A Tandon, DR Amancio, A Flammini, F Menczer, S Milojević, ...",
+      "citations": 16,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12006954240860519162,11577477511106057046",
+      "paper_url": "https://doi.org/10.1162/qss_a_00070",
+      "title": "Recency predicts bursts in the evolution of author citations",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:tkaPQYYpVKoC",
+      "venue": "Quantitative Science Studies 1 (3), 1298-1308",
+      "year": 2020
+    },
+    {
       "authors": "DR Amancio, ON Oliveira Jr, LF Costa",
       "citations": 16,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16765828003089356456",
@@ -685,16 +695,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:_Re3VWB3Y0AC",
       "venue": "Physica A: Statistical Mechanics and its Applications 598, 127387",
       "year": 2022
-    },
-    {
-      "authors": "FN Silva, A Tandon, DR Amancio, A Flammini, F Menczer, S Milojević, ...",
-      "citations": 15,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12006954240860519162,11577477511106057046",
-      "paper_url": "https://doi.org/10.1162/qss_a_00070",
-      "title": "Recency predicts bursts in the evolution of author citations",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:tkaPQYYpVKoC",
-      "venue": "Quantitative Science Studies 1 (3), 1298-1308",
-      "year": 2020
     },
     {
       "authors": "J Klarak, ACM Brito, LF Moreira, FN Silva, DR Amancio, R Andok, ...",
@@ -927,16 +927,6 @@ window.SCHOLAR = {
       "year": 2014
     },
     {
-      "authors": "DR Amancio",
-      "citations": 5,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14857485211367111423",
-      "paper_url": "https://doi.org/10.11606/t.76.2013.tde-20012014-092439",
-      "title": "Classificação de textos com redes complexas",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:M3NEmzRMIkIC",
-      "venue": "",
-      "year": 2013
-    },
-    {
       "authors": "DR Amancio, R Fabbri, ON Oliveira Jr, MGV Nunes, L da Fontoura Costa",
       "citations": 5,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4259211547003320679",
@@ -945,6 +935,16 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:UeHWp8X0CEIC",
       "venue": "Complex Networks: Second International Workshop, CompleNet 2010, Rio de …",
       "year": 2011
+    },
+    {
+      "authors": "DR Amancio",
+      "citations": 4,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14857485211367111423",
+      "paper_url": "https://doi.org/10.11606/t.76.2013.tde-20012014-092439",
+      "title": "Classificação de textos com redes complexas",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:M3NEmzRMIkIC",
+      "venue": "",
+      "year": 2013
     },
     {
       "authors": "TJO Toledo Junior, DR Amancio, RAF Romero",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-05T12:38:50Z"
+  "updated_at": "2026-11-06T12:21:35Z"
 };
