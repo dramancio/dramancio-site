@@ -42,7 +42,7 @@ window.SCHOLAR = {
       "year": 2021
     },
     {
-      "count": 606,
+      "count": 607,
       "year": 2022
     },
     {
@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 679,
+      "count": 682,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5583,
-      "recent": 3770
+      "all": 5586,
+      "recent": 3774
     },
     "h_index": {
       "all": 41,
@@ -377,6 +377,16 @@ window.SCHOLAR = {
       "year": 2012
     },
     {
+      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
+      "citations": 51,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
+      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
+      "title": "Machine learning and economic forecasting: The role of international trade networks",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
+      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
+      "year": 2024
+    },
+    {
       "authors": "DR Amancio, ON Oliveira Jr, L da Fontoura Costa",
       "citations": 51,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15411530663427582778",
@@ -385,16 +395,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:W7OEmFMy1HYC",
       "venue": "Journal of informetrics 6 (3), 427-434",
       "year": 2012
-    },
-    {
-      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
-      "citations": 50,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
-      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
-      "title": "Machine learning and economic forecasting: The role of international trade networks",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
-      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
-      "year": 2024
     },
     {
       "authors": "H Ferraz de Arruda, F Nascimento Silva, V Queiroz Marinho, ...",
@@ -508,7 +508,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "JCMC Silva, RP Gouveia, KMC Zielinski, MCF Oliveira, DR Amancio, ...",
-      "citations": 36,
+      "citations": 37,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16865880095456224329",
       "paper_url": "https://doi.org/10.1021/acsami.5c08837",
       "title": "AI-assisted tools for scientific review writing: Opportunities and cautions",
@@ -727,6 +727,16 @@ window.SCHOLAR = {
       "year": 2026
     },
     {
+      "authors": "JL Franco, MVM Neto, FAN Verri, DR Amancio",
+      "citations": 11,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6467507089484462144",
+      "paper_url": "https://doi.org/10.1016/j.physa.2026.131318",
+      "title": "Graph machine learning for flight delay prediction due to holding manouver",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:i2xiXl-TujoC",
+      "venue": "Physica A: Statistical Mechanics and its Applications, 131318",
+      "year": 2026
+    },
+    {
       "authors": "JV Tohalino, DR Amancio",
       "citations": 11,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1543416051081782814",
@@ -735,16 +745,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:abG-DnoFyZgC",
       "venue": "2017 Brazilian Conference on Intelligent Systems (BRACIS), 366-371",
       "year": 2017
-    },
-    {
-      "authors": "JL Franco, MVM Neto, FAN Verri, DR Amancio",
-      "citations": 10,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6467507089484462144",
-      "paper_url": "https://doi.org/10.1016/j.physa.2026.131318",
-      "title": "Graph machine learning for flight delay prediction due to holding manouver",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:i2xiXl-TujoC",
-      "venue": "Physica A: Statistical Mechanics and its Applications, 131318",
-      "year": 2026
     },
     {
       "authors": "DR Amancio, J Machicao, LVC Quispe",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-06T12:21:35Z"
+  "updated_at": "2026-11-07T11:15:09Z"
 };
