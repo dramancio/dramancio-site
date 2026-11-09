@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 682,
+      "count": 684,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5586,
-      "recent": 3774
+      "all": 5588,
+      "recent": 3776
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 953,
+      "citations": 954,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -208,7 +208,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "CH Comin, T Peron, FN Silva, DR Amancio, FA Rodrigues, LF Costa",
-      "citations": 82,
+      "citations": 81,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3900009399712267932",
       "paper_url": "https://doi.org/10.1016/j.physrep.2020.03.002",
       "title": "Complex systems: Features, similarity and connectivity",
@@ -287,6 +287,16 @@ window.SCHOLAR = {
       "year": 2012
     },
     {
+      "authors": "DR Amancio",
+      "citations": 63,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10204848905931018149",
+      "paper_url": "https://doi.org/10.1088/1742-5468/2015/03/p03005",
+      "title": "Authorship recognition via fluctuation analysis of network topology and word intermittency",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:RGFaLdJalmkC",
+      "venue": "Journal of Statistical Mechanics: Theory and Experiment 2015 (3), P03005",
+      "year": 2015
+    },
+    {
       "authors": "DR Amancio, EG Altmann, ON Oliveira Jr, LF Costa",
       "citations": 63,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=347307475809053732",
@@ -295,16 +305,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:u-x6o8ySG0sC",
       "venue": "New Journal of Physics 13 (12), 123024",
       "year": 2011
-    },
-    {
-      "authors": "DR Amancio",
-      "citations": 62,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10204848905931018149",
-      "paper_url": "https://doi.org/10.1088/1742-5468/2015/03/p03005",
-      "title": "Authorship recognition via fluctuation analysis of network topology and word intermittency",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:RGFaLdJalmkC",
-      "venue": "Journal of Statistical Mechanics: Theory and Experiment 2015 (3), P03005",
-      "year": 2015
     },
     {
       "authors": "LVC Quispe, JAV Tohalino, DR Amancio",
@@ -378,7 +378,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "TC Silva, PVB Wilhelm, DR Amancio",
-      "citations": 51,
+      "citations": 52,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
       "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
       "title": "Machine learning and economic forecasting: The role of international trade networks",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-08T11:27:05Z"
+  "updated_at": "2026-11-09T13:13:15Z"
 };
