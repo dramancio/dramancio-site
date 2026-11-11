@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-10T12:53:24Z"
+  "updated_at": "2026-11-11T12:02:27Z"
 };
