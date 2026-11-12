@@ -30,7 +30,7 @@ window.SCHOLAR = {
       "year": 2018
     },
     {
-      "count": 340,
+      "count": 335,
       "year": 2019
     },
     {
@@ -46,11 +46,11 @@ window.SCHOLAR = {
       "year": 2022
     },
     {
-      "count": 489,
+      "count": 488,
       "year": 2023
     },
     {
-      "count": 592,
+      "count": 593,
       "year": 2024
     },
     {
@@ -71,7 +71,7 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5597,
+      "all": 5592,
       "recent": 3780
     },
     "h_index": {
@@ -218,7 +218,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio",
-      "citations": 80,
+      "citations": 79,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15322803313287115488",
       "paper_url": "https://doi.org/10.1371/journal.pone.0118394",
       "title": "Probing the topological properties of complex networks modeling short written texts",
@@ -287,16 +287,6 @@ window.SCHOLAR = {
       "year": 2012
     },
     {
-      "authors": "DR Amancio, EG Altmann, ON Oliveira Jr, LF Costa",
-      "citations": 64,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=347307475809053732",
-      "paper_url": "https://hdl.handle.net/11858/00-001M-0000-0029-8B9A-5",
-      "title": "Comparing intermittency and network measurements of words and their dependence on authorship",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:u-x6o8ySG0sC",
-      "venue": "New Journal of Physics 13 (12), 123024",
-      "year": 2011
-    },
-    {
       "authors": "DR Amancio",
       "citations": 63,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10204848905931018149",
@@ -307,6 +297,16 @@ window.SCHOLAR = {
       "year": 2015
     },
     {
+      "authors": "DR Amancio, EG Altmann, ON Oliveira Jr, LF Costa",
+      "citations": 63,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=347307475809053732",
+      "paper_url": "https://hdl.handle.net/11858/00-001M-0000-0029-8B9A-5",
+      "title": "Comparing intermittency and network measurements of words and their dependence on authorship",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:u-x6o8ySG0sC",
+      "venue": "New Journal of Physics 13 (12), 123024",
+      "year": 2011
+    },
+    {
       "authors": "LVC Quispe, JAV Tohalino, DR Amancio",
       "citations": 61,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10589696937129838867",
@@ -315,16 +315,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:_B80troHkn4C",
       "venue": "Physica A: Statistical Mechanics and its Applications 562, 125344",
       "year": 2021
-    },
-    {
-      "authors": "LB dos Santos, EA Corrêa Jr, ON Oliveira Jr, DR Amancio, LL Mansur, ...",
-      "citations": 57,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1355051919057594048",
-      "paper_url": "https://arxiv.org/abs/1704.08088",
-      "title": "Enriching complex networks with word embeddings for detecting mild cognitive impairment from speech transcripts",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:5ugPr518TE4C",
-      "venue": "arXiv preprint arXiv:1704.08088",
-      "year": 2017
     },
     {
       "authors": "DR Amancio, MGV Nunes, ON Oliveira Jr, TAS Pardo, L Antiqueira, ...",
@@ -347,14 +337,14 @@ window.SCHOLAR = {
       "year": 2019
     },
     {
-      "authors": "C Akimushkin, DR Amancio, ON Oliveira Jr",
-      "citations": 55,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=360301669281111994",
-      "paper_url": "https://doi.org/10.1016/j.physa.2017.12.054",
-      "title": "On the role of words in the network structure of texts: Application to authorship attribution",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:f2IySw72cVMC",
-      "venue": "Physica A: Statistical Mechanics and its Applications 495, 49-58",
-      "year": 2018
+      "authors": "LB dos Santos, EA Corrêa Jr, ON Oliveira Jr, DR Amancio, LL Mansur, ...",
+      "citations": 56,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1355051919057594048",
+      "paper_url": "https://arxiv.org/abs/1704.08088",
+      "title": "Enriching complex networks with word embeddings for detecting mild cognitive impairment from speech transcripts",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:5ugPr518TE4C",
+      "venue": "arXiv preprint arXiv:1704.08088",
+      "year": 2017
     },
     {
       "authors": "MP Viana, DR Amancio, LF Costa",
@@ -367,8 +357,18 @@ window.SCHOLAR = {
       "year": 2013
     },
     {
-      "authors": "DR Amancio, SM Aluisio, ON Oliveira Jr, LF Costa",
+      "authors": "C Akimushkin, DR Amancio, ON Oliveira Jr",
       "citations": 54,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=360301669281111994",
+      "paper_url": "https://doi.org/10.1016/j.physa.2017.12.054",
+      "title": "On the role of words in the network structure of texts: Application to authorship attribution",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:f2IySw72cVMC",
+      "venue": "Physica A: Statistical Mechanics and its Applications 495, 49-58",
+      "year": 2018
+    },
+    {
+      "authors": "DR Amancio, SM Aluisio, ON Oliveira Jr, LF Costa",
+      "citations": 53,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6238035411913694368",
       "paper_url": "https://doi.org/10.1209/0295-5075/100/58002",
       "title": "Complex networks analysis of language complexity",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-11T12:02:27Z"
+  "updated_at": "2026-11-12T13:05:22Z"
 };
