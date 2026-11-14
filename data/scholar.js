@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 688,
+      "count": 694,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5592,
-      "recent": 3780
+      "all": 5598,
+      "recent": 3786
     },
     "h_index": {
       "all": 41,
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 981,
+      "citations": 983,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 956,
+      "citations": 958,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -128,7 +128,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "EA Corrêa Jr, FN Silva, LF Costa, DR Amancio",
-      "citations": 132,
+      "citations": 133,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14735079182095585767",
       "paper_url": "https://doi.org/10.1016/j.joi.2017.03.003",
       "title": "Patterns of authors contribution in scientific manuscripts",
@@ -508,7 +508,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "JCMC Silva, RP Gouveia, KMC Zielinski, MCF Oliveira, DR Amancio, ...",
-      "citations": 37,
+      "citations": 38,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16865880095456224329",
       "paper_url": "https://doi.org/10.1021/acsami.5c08837",
       "title": "AI-assisted tools for scientific review writing: Opportunities and cautions",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-13T12:29:29Z"
+  "updated_at": "2026-11-14T11:41:04Z"
 };
