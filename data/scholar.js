@@ -50,7 +50,7 @@ window.SCHOLAR = {
       "year": 2023
     },
     {
-      "count": 593,
+      "count": 592,
       "year": 2024
     },
     {
@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 694,
+      "count": 692,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5598,
-      "recent": 3786
+      "all": 5596,
+      "recent": 3783
     },
     "h_index": {
       "all": 41,
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 983,
+      "citations": 982,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -208,7 +208,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "CH Comin, T Peron, FN Silva, DR Amancio, FA Rodrigues, LF Costa",
-      "citations": 82,
+      "citations": 81,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3900009399712267932",
       "paper_url": "https://doi.org/10.1016/j.physrep.2020.03.002",
       "title": "Complex systems: Features, similarity and connectivity",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-14T11:41:04Z"
+  "updated_at": "2026-11-15T12:09:30Z"
 };
