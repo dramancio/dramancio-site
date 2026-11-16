@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 692,
+      "count": 697,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5596,
-      "recent": 3783
+      "all": 5600,
+      "recent": 3788
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 958,
+      "citations": 960,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -208,7 +208,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "CH Comin, T Peron, FN Silva, DR Amancio, FA Rodrigues, LF Costa",
-      "citations": 81,
+      "citations": 82,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3900009399712267932",
       "paper_url": "https://doi.org/10.1016/j.physrep.2020.03.002",
       "title": "Complex systems: Features, similarity and connectivity",
@@ -547,6 +547,16 @@ window.SCHOLAR = {
       "year": 2023
     },
     {
+      "authors": "L Guerreiro, FN Silva, DR Amancio",
+      "citations": 23,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11693730888931508484",
+      "paper_url": "https://doi.org/10.1016/j.ins.2020.12.060",
+      "title": "A comparative analysis of knowledge acquisition performance in complex networks",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:1yQoGdGgb4wC",
+      "venue": "Information Sciences 555, 46-57",
+      "year": 2021
+    },
+    {
       "authors": "HF de Arruda, FN Silva, CH Comin, DR Amancio, LF Costa",
       "citations": 23,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3111668503929590593,18343057833504838035",
@@ -575,16 +585,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:ZfRJV9d4-WMC",
       "venue": "Journal of Informetrics 16 (2), 101260",
       "year": 2022
-    },
-    {
-      "authors": "L Guerreiro, FN Silva, DR Amancio",
-      "citations": 22,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11693730888931508484",
-      "paper_url": "https://doi.org/10.1016/j.ins.2020.12.060",
-      "title": "A comparative analysis of knowledge acquisition performance in complex networks",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:1yQoGdGgb4wC",
-      "venue": "Information Sciences 555, 46-57",
-      "year": 2021
     },
     {
       "authors": "TS Lima, HF de Arruda, FN Silva, CH Comin, DR Amancio, LF Costa",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-15T12:09:30Z"
+  "updated_at": "2026-11-16T13:05:21Z"
 };
