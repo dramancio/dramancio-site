@@ -26,11 +26,11 @@ window.SCHOLAR = {
       "year": 2017
     },
     {
-      "count": 309,
+      "count": 314,
       "year": 2018
     },
     {
-      "count": 335,
+      "count": 330,
       "year": 2019
     },
     {
@@ -46,7 +46,7 @@ window.SCHOLAR = {
       "year": 2022
     },
     {
-      "count": 488,
+      "count": 489,
       "year": 2023
     },
     {
@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 699,
+      "count": 702,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5603,
-      "recent": 3791
+      "all": 5607,
+      "recent": 3795
     },
     "h_index": {
       "all": 41,
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 982,
+      "citations": 983,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 962,
+      "citations": 963,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -367,6 +367,16 @@ window.SCHOLAR = {
       "year": 2018
     },
     {
+      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
+      "citations": 53,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
+      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
+      "title": "Machine learning and economic forecasting: The role of international trade networks",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
+      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
+      "year": 2024
+    },
+    {
       "authors": "DR Amancio, SM Aluisio, ON Oliveira Jr, LF Costa",
       "citations": 53,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6238035411913694368",
@@ -375,16 +385,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:WF5omc3nYNoC",
       "venue": "Europhysics Letters 100 (5), 58002",
       "year": 2012
-    },
-    {
-      "authors": "TC Silva, PVB Wilhelm, DR Amancio",
-      "citations": 52,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15986383655788540964",
-      "paper_url": "https://doi.org/10.1016/j.physa.2024.129977",
-      "title": "Machine learning and economic forecasting: The role of international trade networks",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:MLfJN-KU85MC",
-      "venue": "Physica A: Statistical Mechanics and its Applications 649, 129977",
-      "year": 2024
     },
     {
       "authors": "DR Amancio, ON Oliveira Jr, L da Fontoura Costa",
@@ -528,7 +528,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio",
-      "citations": 30,
+      "citations": 31,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4543714659606783472",
       "paper_url": "https://doi.org/10.1209/0295-5075/114/58005",
       "title": "Network analysis of named entity co-occurrences in written texts",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-19T13:41:43Z"
+  "updated_at": "2026-11-20T13:25:42Z"
 };
