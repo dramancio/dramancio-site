@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 702,
+      "count": 706,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5607,
-      "recent": 3795
+      "all": 5611,
+      "recent": 3799
     },
     "h_index": {
       "all": 41,
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 983,
+      "citations": 986,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 963,
+      "citations": 962,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -508,7 +508,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "JCMC Silva, RP Gouveia, KMC Zielinski, MCF Oliveira, DR Amancio, ...",
-      "citations": 38,
+      "citations": 39,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16865880095456224329",
       "paper_url": "https://doi.org/10.1021/acsami.5c08837",
       "title": "AI-assisted tools for scientific review writing: Opportunities and cautions",
@@ -707,6 +707,16 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
+      "authors": "DA Bezerra, FN Silva, DR Amancio",
+      "citations": 12,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15260054581949198025",
+      "paper_url": "https://doi.org/10.1016/j.joi.2026.101791",
+      "title": "Leveraging GANs for citation intent classification and its impact on citation network analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:xtoqd-5pKcoC",
+      "venue": "Journal of Informetrics 20 (2), 101791",
+      "year": 2026
+    },
+    {
       "authors": "JAV Tohalino, TC Silva, DR Amancio",
       "citations": 12,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8934502238184135780,2327461675378449260",
@@ -715,16 +725,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:k8Z6L05lTy4C",
       "venue": "Scientometrics 129 (7), 3599-3623",
       "year": 2024
-    },
-    {
-      "authors": "DA Bezerra, FN Silva, DR Amancio",
-      "citations": 11,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15260054581949198025",
-      "paper_url": "https://doi.org/10.1016/j.joi.2026.101791",
-      "title": "Leveraging GANs for citation intent classification and its impact on citation network analysis",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:xtoqd-5pKcoC",
-      "venue": "Journal of Informetrics 20 (2), 101791",
-      "year": 2026
     },
     {
       "authors": "JL Franco, MVM Neto, FAN Verri, DR Amancio",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-21T12:54:00Z"
+  "updated_at": "2026-11-22T12:46:33Z"
 };
