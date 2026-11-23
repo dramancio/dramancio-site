@@ -42,11 +42,11 @@ window.SCHOLAR = {
       "year": 2021
     },
     {
-      "count": 607,
+      "count": 606,
       "year": 2022
     },
     {
-      "count": 489,
+      "count": 490,
       "year": 2023
     },
     {
@@ -54,11 +54,11 @@ window.SCHOLAR = {
       "year": 2024
     },
     {
-      "count": 837,
+      "count": 836,
       "year": 2025
     },
     {
-      "count": 706,
+      "count": 711,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5611,
-      "recent": 3799
+      "all": 5615,
+      "recent": 3803
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 962,
+      "citations": 965,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -617,6 +617,16 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
+      "authors": "DR Amancio, ON Oliveira Jr, LF Costa",
+      "citations": 21,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13616345463527091456,1508453683605537169,5097161239052477476",
+      "paper_url": "https://doi.org/10.1088/1742-5468/2015/03/p03003",
+      "title": "Robustness of community structure to node removal",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:RYcK_YlVTxYC",
+      "venue": "Journal of Statistical Mechanics: Theory and Experiment 2015 (3), P03003",
+      "year": 2015
+    },
+    {
       "authors": "A Vital, DR Amancio",
       "citations": 20,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10111196521349750046,9105498862381413602",
@@ -625,16 +635,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:nrtMV_XWKgEC",
       "venue": "Scientometrics 127 (10), 6011-6028",
       "year": 2022
-    },
-    {
-      "authors": "DR Amancio, ON Oliveira Jr, LF Costa",
-      "citations": 20,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13616345463527091456,1508453683605537169,5097161239052477476",
-      "paper_url": "https://doi.org/10.1088/1742-5468/2015/03/p03003",
-      "title": "Robustness of community structure to node removal",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:RYcK_YlVTxYC",
-      "venue": "Journal of Statistical Mechanics: Theory and Experiment 2015 (3), P03003",
-      "year": 2015
     },
     {
       "authors": "EA Correa Jr, VQ Marinho, DR Amancio",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-22T12:46:33Z"
+  "updated_at": "2026-11-23T15:08:40Z"
 };
