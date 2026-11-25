@@ -54,11 +54,11 @@ window.SCHOLAR = {
       "year": 2024
     },
     {
-      "count": 836,
+      "count": 837,
       "year": 2025
     },
     {
-      "count": 711,
+      "count": 713,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5615,
-      "recent": 3803
+      "all": 5619,
+      "recent": 3806
     },
     "h_index": {
       "all": 41,
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 965,
+      "citations": 968,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -837,6 +837,16 @@ window.SCHOLAR = {
       "year": 2013
     },
     {
+      "authors": "L Guerreiro, FN Silva, DR Amancio",
+      "citations": 8,
+      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9502423847409772433,8935897693585651953,10477026716084150016",
+      "paper_url": "https://doi.org/10.1016/j.physa.2024.129618",
+      "title": "Recovering network topology and dynamics from sequences: A machine learning approach",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:ILKRHgRFtOwC",
+      "venue": "Physica A: Statistical Mechanics and its Applications 638, 129618",
+      "year": 2024
+    },
+    {
       "authors": "JAV Tohalino, TC Silva, DR Amancio",
       "citations": 8,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3462634968822487652,5759077253577957599",
@@ -855,16 +865,6 @@ window.SCHOLAR = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:N5tVd3kTz84C",
       "venue": "Emerging Markets Finance and Trade 58 (4), 965-996",
       "year": 2022
-    },
-    {
-      "authors": "L Guerreiro, FN Silva, DR Amancio",
-      "citations": 7,
-      "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9502423847409772433,8935897693585651953,10477026716084150016",
-      "paper_url": "https://doi.org/10.1016/j.physa.2024.129618",
-      "title": "Recovering network topology and dynamics from sequences: A machine learning approach",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WHdCNq0AAAAJ&pagesize=100&citation_for_view=WHdCNq0AAAAJ:ILKRHgRFtOwC",
-      "venue": "Physica A: Statistical Mechanics and its Applications 638, 129618",
-      "year": 2024
     },
     {
       "authors": "L Guerreiro, FN Silva, DR Amancio",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-24T15:06:25Z"
+  "updated_at": "2026-11-25T14:47:19Z"
 };
