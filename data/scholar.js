@@ -58,7 +58,7 @@ window.SCHOLAR = {
       "year": 2025
     },
     {
-      "count": 713,
+      "count": 719,
       "year": 2026
     }
   ],
@@ -71,8 +71,8 @@ window.SCHOLAR = {
   ],
   "metrics": {
     "citations": {
-      "all": 5619,
-      "recent": 3806
+      "all": 5625,
+      "recent": 3812
     },
     "h_index": {
       "all": 41,
@@ -88,7 +88,7 @@ window.SCHOLAR = {
   "publications": [
     {
       "authors": "MZ Rodriguez, CH Comin, D Casanova, OM Bruno, DR Amancio, ...",
-      "citations": 986,
+      "citations": 987,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2509939591200642660",
       "paper_url": "https://doi.org/10.1371/journal.pone.0210236",
       "title": "Clustering algorithms: A comparative approach",
@@ -98,7 +98,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "FL Gewers, GR Ferreira, HFD Arruda, FN Silva, CH Comin, DR Amancio, ...",
-      "citations": 968,
+      "citations": 972,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7240387186576415045,2689030618436194712,2125681537794154538",
       "paper_url": "https://doi.org/10.1145/3447755",
       "title": "Principal component analysis: A natural approach to data exploration",
@@ -108,7 +108,7 @@ window.SCHOLAR = {
     },
     {
       "authors": "DR Amancio, CH Comin, D Casanova, G Travieso, OM Bruno, ...",
-      "citations": 318,
+      "citations": 319,
       "cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5251232088675018309,9647129443986067881,7834447352100958408,10456774680092516225",
       "paper_url": "https://doi.org/10.1371/journal.pone.0094137",
       "title": "A systematic comparison of supervised classifiers",
@@ -1419,5 +1419,5 @@ window.SCHOLAR = {
   ],
   "scholar_id": "WHdCNq0AAAAJ",
   "source": "Google Scholar",
-  "updated_at": "2026-11-26T14:11:20Z"
+  "updated_at": "2026-11-27T14:08:43Z"
 };
